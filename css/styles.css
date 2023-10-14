@@ -11,12 +11,26 @@ body {
 body .navbar {
   margin-bottom: 40px;
 }
-body .container .row div.card .card {
+body .container .row #blog_posts .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-body .container .row div.card .card:hover {
+body .container .row #blog_posts .card:hover {
   transform: scale(1.03);
   transition: transform 0.2s;
+}
+body footer {
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+body footer .container .row .social-items a .fab {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+body footer .container .row .social-items a .fab:hover {
+  text-decoration: none;
+  color: #007bff; /* This is the default Bootstrap primary color. Adjust if needed. */
 }
 
 /*# sourceMappingURL=styles.css.map */

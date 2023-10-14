@@ -50,6 +50,13 @@ ${paragraphsHTML}              <a href="post.html?id=${
 
   // Method to initiate fetching and rendering
   init() {
-    this.fetchPosts().done((posts) => this.renderPosts(posts)); //after fetching, render the posts
+    //ensure we only call the render posts on the index page. We don't want to make this call on the about, contact, or post pages
+    if (
+      window.location.pathname.endsWith("index.html") ||
+      window.location.pathname === "/" ||
+      window.location.pathname.endsWith("/")
+    ) {
+      this.fetchPosts().done((posts) => this.renderPosts(posts)); //after fetching, render the posts
+    }
   }
 }
