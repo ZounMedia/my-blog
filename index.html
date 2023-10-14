@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <a class="navbar-brand" href="index.html">My Blog</a>
       <button
         class="navbar-toggler"
@@ -41,7 +41,7 @@
 
     <div class="container mt-5">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8" id="blog_posts">
           <!-- Blog Post -->
           <div class="card mb-4">
             <img
@@ -67,22 +67,86 @@
         </div>
 
         <div class="col-md-4">
-          <!-- Search Widget -->
-          <div class="card my-4">
-            <h5 class="card-header">Search</h5>
+          <!-- Featured Posts Widget -->
+          <h5 class="mb-4">Featured Posts</h5>
+
+          <!-- Smaller Featured Post Card (This is a placeholder and will be populated dynamically) -->
+          <div class="card mb-4">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/350x150"
+              alt="Card image cap"
+            />
             <div class="card-body">
-              <div class="input-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Search for..."
-                />
-                <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button">Go!</button>
-                </span>
-              </div>
+              <h5 class="card-title">Featured Post 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet...</p>
+              <a href="post.html?id=123" class="btn btn-primary btn-sm"
+                >Read More &rarr;</a
+              >
             </div>
           </div>
+
+          <div class="card mb-4">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/350x150"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Featured Post 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet...</p>
+              <a href="post.html?id=123" class="btn btn-primary btn-sm"
+                >Read More &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/350x150"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Featured Post 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet...</p>
+              <a href="post.html?id=123" class="btn btn-primary btn-sm"
+                >Read More &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/350x150"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Featured Post 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet...</p>
+              <a href="post.html?id=123" class="btn btn-primary btn-sm"
+                >Read More &rarr;</a
+              >
+            </div>
+          </div>
+
+          <div class="card mb-4">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/350x150"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Featured Post 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet...</p>
+              <a href="post.html?id=123" class="btn btn-primary btn-sm"
+                >Read More &rarr;</a
+              >
+            </div>
+          </div>
+
+          <!-- ... Add more smaller featured post cards as needed ... -->
         </div>
       </div>
     </div>
@@ -90,5 +154,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/blog-service.js"></script>
   </body>
 </html>
